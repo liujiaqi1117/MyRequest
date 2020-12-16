@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/leyou
+    username: root
+    password: 1117
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      max-lifetime: 1770000 #一个连接池的生命时长，超时而且没有被使用则被释放，缺省为30分钟 MYSQL wait_timeout赞数
+      maximum-pool-size: 10    #数据库连接数  公式:
+  rabbitmq:
+    host: 192.168.241.131
+    username: leyou
+    password: 2580
+    virtual-host: /
+    port: 5672
+    template:
+      exchange: leyou.item.exchange
+    publisher-confirms: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5   #每5S发送一次心跳
+    lease-expiration-duration-in-seconds: 10  #10S不发送就过期
+management:
+  health:
+    elasticsearch:
+      enabled: false

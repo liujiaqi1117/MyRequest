@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "name": "leyou.jwt",
+      "type": "cn.jiyun.auth.properties.JwtProperties",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "leyou.jwt.cookie-max-age",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.cookie-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.expire",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "leyou.jwt.pri-key-path",
+      "type": "java.lang.String",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.private-key",
+      "type": "java.security.PrivateKey",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.pub-key-path",
+      "type": "java.lang.String",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.public-key",
+      "type": "java.security.PublicKey",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    },
+    {
+      "name": "leyou.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "cn.jiyun.auth.properties.JwtProperties"
+    }
+  ],
+  "hints": []
+}
